@@ -1,0 +1,15 @@
+from re import findall
+from os import listdir
+path=findall('[^\:]+',PATH)
+
+def help():
+	temp=[]
+	for loc in path:
+		loc=listdir(loc)
+		for val in loc:
+			if(val!='__pycache__' and val.find('.data')==-1):
+				temp.append(val)
+	for val in sorted(temp):
+		print(val)
+
+help()

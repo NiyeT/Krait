@@ -1,0 +1,56 @@
+from re import findall
+import requests
+
+class site_tree:
+	def __init__(self):
+		pass
+
+	#takes:
+		#url
+	#returns:
+		#url's html
+	def get_page(self,url):
+		try:
+			page=requests.get(url).text			
+		except:
+			return ''
+		return page
+
+	#takes:
+		#html
+	#returns:
+		#html encoded links within the html
+	def html_link_scrape(self,url,html):
+		reg=findall('<link[^>]+',html)
+		for ref in range(len(reg)):
+			reg[ref]=findall('href=[\"\'][^\"\']+',reg[ref])[0]
+		script=findall('<script[^>]+',html)
+		for js in script:
+			script[js]=findall('src=[\"\'][^\"\']+',script[js])[0]
+			reg.append(script[js])
+		return reg
+
+	#takes:
+		#list of links
+	#returns:
+		#list of unique links 
+	def remove_duplicate_links(self,link_list):
+		rem=[]
+		for link in link_list:
+			for pos_dup in link_list:
+				if(link==pos_dup):
+					rem.append(link)
+		for val in rem:
+			link_list.remove(val)
+		return link_list
+
+	def draw_site(self,link):
+		site=[link]
+		site_map={link:{}}
+		for address in site:
+			html=self.get_page(address)
+			new_links=self.html_link_scrape(address,html)
+			print(new_links)
+
+get_site=site_tree()
+get_site.draw_site(input('input site: '))

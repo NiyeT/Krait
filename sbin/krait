@@ -1,0 +1,30 @@
+from shutil import move
+
+class krait:
+	def __init__(self):
+		pass
+
+	def crate(self,current_loc,new_loc):
+		path_len=len(PATH)
+		for loc in range(path_len):
+			if(new_loc==PATH[loc]):
+				break
+			if(loc==path_len-1):
+				return print('Directory unavailable.')
+		try:
+			move(current_loc,new_loc)
+		except:
+			print ('File to be moved not found.')
+
+	def decide(self,command):
+		if(command=='crate'):
+			self.crate(param1,param2)
+		elif(command==''):
+			pass
+			
+krait=krait()
+
+try:
+	krait.decide(param0)
+except:
+	print('Command not found.')

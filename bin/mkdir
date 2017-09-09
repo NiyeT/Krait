@@ -1,0 +1,6 @@
+from os import makedirs
+
+def mkdir(dir):
+	makedirs(dir)
+
+mkdir(param0)

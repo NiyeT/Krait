@@ -1,0 +1,4 @@
+import requests
+test=requests.get('http://127.0.0.1:8080?niye=Google_Intern&&Quiara=Queen')
+import request
+test=requests.get('http://127.0.0.1:8080?niye=Google_Intern&&water=life')

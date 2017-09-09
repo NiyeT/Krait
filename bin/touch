@@ -1,0 +1,7 @@
+def touch(f):
+	try:
+	    open(f, 'r').close()
+	except FileNotFoundError:
+	    open(f, 'w')
+
+touch(param0)

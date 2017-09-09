@@ -1,0 +1,8 @@
+import shutil
+def mv(file,new_loc):
+	shutil.move(file,new_loc)
+
+try:
+	mv(param0,param1)
+except Exception as err:
+	print(err)

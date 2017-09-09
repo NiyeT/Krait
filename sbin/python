@@ -1,0 +1,5 @@
+def python(file):
+	file=open(file,'r').read()
+	exec(file)	
+
+python(param0)

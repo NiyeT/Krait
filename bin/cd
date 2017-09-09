@@ -1,0 +1,9 @@
+from os import chdir
+
+def cd(location):
+	try:
+		chdir(location)
+	except Exception as err:
+		print(err)
+		
+cd(param0)

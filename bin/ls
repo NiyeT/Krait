@@ -1,0 +1,22 @@
+from os import listdir
+from termcolor import colored
+
+def ls(path):
+	path_contents=sorted(listdir(path))
+	for val in path_contents:
+		try:
+			open(path + '/' + val).close()
+			print(val)
+		except:
+			print(colored(val,'blue'))
+
+def cp():
+	try:
+		check=param0
+		check=None
+	except:
+		ls('.')
+		return False
+	ls(param0)
+
+cp()

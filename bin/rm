@@ -1,0 +1,15 @@
+import os
+import shutil
+
+def rm(file):
+	try:
+		os.remove(file)
+	except:
+		shutil.rmtree(file)
+
+# try:
+# 	test=param1
+# 	test=None
+# except:
+# 	rm(param0)
+rm(param0)

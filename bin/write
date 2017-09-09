@@ -1,0 +1,18 @@
+import readline
+import sys
+import curses
+import shutil
+
+# ANSI={
+# 	"escape":"x1B",
+# 	"backspace":
+# }
+
+window_height=shutil.get_terminal_size()
+# print('test')
+# print('\r')
+# print('bacon')
+
+print('test')
+sys.stdout.write('\033[F')
+print(window_height)

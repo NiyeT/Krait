@@ -1,0 +1,9 @@
+def more(file):
+	f=open(file)
+	print(f.read())
+	f.close()
+
+try:
+	more(param0);
+except Exception as err:
+	print(err)
