@@ -19,8 +19,18 @@ git clone https://github.com/NiyeT/Krait.git
 
 # Usage
 
-• Call python3 on krait.py
+• cd into Krait directory
 ````
-python3 Krait/krait.py
+cd Krait
+````
+
+• Call python3 on krait.py
+````sh
+python3 krait.py
+````
+
+• List all commands
+````sh
+directives
 ````
 ![alt text](https://i.imgur.com/h53eImU.png)
