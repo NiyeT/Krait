@@ -1,2 +1,7 @@
 # Bold
-<h1 style="color:blue">coolio</h1>
+````python
+    def bacon():
+      for x in range(10):
+        print 'give no fucks'
+
+````
