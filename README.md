@@ -23,3 +23,4 @@ git clone https://github.com/NiyeT/Krait.git
 ````
 python3 Krait/krait.py
 ````
+![alt text](https://i.imgur.com/zSCSWmP.png)
