@@ -1,9 +1,5 @@
-''''
+````
 <html>
-     <head>
-     </head>
-     <body>
-       hello
-     </body>
+<body>hello</body>
 </html>
-''''
+````
