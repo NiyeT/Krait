@@ -13,8 +13,13 @@ PyLine is a command line interface to be used as an alternative to the bash prog
 
 • Clone the repository.
 
-````bash
-git clone https://github.com/NiyeT/PyLine.git
+````sh
+git clone https://github.com/NiyeT/Krait.git
 ````
 
-• Call
+# Usage
+
+• Call python3 on krait.py
+````
+python3 Krait/krait.py
+````
